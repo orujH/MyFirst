@@ -1,0 +1,366 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,300;0,900;1,500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Roboto:wght@100&display=swap');
+:root {
+    background-color: rgb(155, 0, 0);
+}
+*{
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: o.2s ease;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 90px;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 8px;
+    background-color: #fff;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius:30px ;
+    width: 8px;
+    background-color: rgb(0, 0, 0);
+}
+body{
+    background-color: rgb(155, 0, 0) ;
+}
+section{
+    padding: 40px 5%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 25px;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+}
+.search-input{
+    font-size: 15px;
+    color: black;
+    padding: 10px;
+    text-transform: none;
+    border-radius: 30px;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+/*! Header Start*/
+.header .logo img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+.header{
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin: 20px 5%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 30px -10px rgba(rgb(10, 9, 9) );
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header .navbar .button a{
+    margin: 0 5px;
+    font-size: 18px;
+    color: rgb(2, 2, 2);
+    border-bottom: 1px solid transparent ;
+}
+.header .navbar .button i{
+    margin: 0 5px;
+    font-size: 18px;
+    color: rgb(2, 2, 2);
+    border-bottom: 1px solid transparent ;
+   
+}
+.header .navbar .button  a:hover{
+    border-color: rgb(250, 3, 3);
+    padding-bottom: 10px;
+}
+.header .navbar .button i:hover{
+    border-color: rgb(250, 3, 3);
+    padding-bottom: 10px;
+}
+.header .navbar .button i{
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 20px;
+    background-color: transparent;
+}
+/*! Header End*/
+
+/*! Home Start */
+.home{
+    min-height: 100vh;
+    background: url(/images/avengers2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .home content{
+    max-width: 600px;
+}
+h2{
+    font-size: 100px;
+    color:  rgb(0, 0, 0);
+    
+}
+.home .content p, h5{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 8px;
+    padding: 10px 0;
+    color: rgb(17, 17, 17);
+    margin-left: 20px;
+}
+.home .content .btn{
+    margin-left: 80px!important;
+}
+/*! Home End */
+/*! Menu Start*/
+.menu .btn{
+    margin-bottom: 35px !important;
+    border-bottom: 1px solid  #fff !important;
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+.menu .box-container .box img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    align-items: center;
+    text-align: center;
+}
+.menu .box-container .box:hover img{
+    transform: scale(0.9);
+}
+.menu .box-container .box h3{
+    font-size: 18px;
+}
+.menu .box-container .box span{
+    font-size: 12px;
+    color: red;
+    padding: 10px 0;
+}
+.menu .box-container .box .powers{
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+}
+.menu .box-container .box .aurmor{
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+}
+.menu .box-container .box{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.menu .box-container .box-bottom .btn-learn{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 25px;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+    
+}
+/*! Menu End*/
+
+/*! Menu Start*/
+.films .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+.films .box-container .box{
+    text-align: center;
+    background-color: darkgray;
+    position: relative;
+    border-radius: 30px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.films .box-container .box .box-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+.films .box-container .box .box-head .title{
+    font-size: 14px;
+    color: #fff;
+    background-color: rgb(155, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: -11px;
+}
+.films .box-container .box .box-head .name{
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: -15px ;
+    font-weight: bold;
+    text-align: start;
+    overflow-wrap: anywhere;
+    color: #fff;
+    
+}
+.films .box-container img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    border: 30px;
+}
+.films .box-container .box-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-bottom: -25px;
+}
+.films .box-container .box-bottom .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.films .box-container .box-bottom .info .rank{
+    font-size: 12px;
+}
+.films .box-container .box-bottom .info .imbd{
+    color: rgb(146, 2, 2);
+    font-weight: bold;
+}
+.films .box-container .box-bottom .film-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(155, 0, 0) ;
+}
+.films .box-container .box-bottom .film-btn a i{
+    font-size: 16px;
+    color: rgb(155, 0, 0);
+}
+.films .btn{
+    margin-bottom: 35px !important;
+    border-bottom: 1px solid  #fff !important;
+}
+.btn span{
+    color: red;
+}
+/*! Menu End*/ 
+
+/* About Start*/
+.about .btn{
+    margin-bottom: 35px !important;
+    border-bottom: 1px solid  #fff !important;
+}
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+.about .row .content{
+    flex: 1 1 450px;
+}
+.about .row img{
+    width: 100%;
+}
+.about .row .content h3{
+    font-size: 50px;
+    color:#fff ;
+}
+.about .row .content p{
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.5;
+}
+.comics .btn{
+    margin-bottom: 35px !important;
+    border-bottom: 1px solid  #fff !important;
+}
+/* About End*/
+/* Footer start*/
+.footer{
+    background-color: rgb(136, 136, 136);
+    text-align: center;
+}
+.footer .search{
+    display: flex;
+    justify-content: center;
+}
+.footer .search .search-input{
+    width: 300px;
+}
+.footer .search .btn-primary{
+    background-color: rgb(155, 0, 0);
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+.footer .share{
+    padding: 20px 0;
+}
+.footer .share a{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border: var(border) ;
+    border-radius: 50%;
+    margin: 3px;
+}
+.footer .share a:hover{
+    background-color: rgb(155, 0, 0);
+}
+.footer .end{
+    font-size: 15px;
+    color: black;
+    font-weight: 300;
+    padding-top: 15px;
+}
+.footer .end span{
+    color: rgb(155, 0, 0);
+}
+/*Footer End*/
